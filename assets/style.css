@@ -11,15 +11,12 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
+    background: #f93;
 
 }
 
-header {
-    background: var(--background);
-    text-decoration: none;
-}
 
 h1 {
     width: 100rem;
@@ -28,10 +25,12 @@ h1 {
     font-size: 5rem;
 }
 
+
 h4{
     font-size: 2rem;
     margin: 2rem;
 }
+
 
 li a {
     text-decoration: none;
@@ -40,6 +39,7 @@ li a {
 
 }
 
+
 p {
     font-size: 16px;
     padding: 1.5rem 0 1.5rem 0;
@@ -47,14 +47,29 @@ p {
     margin: 16px;
 }
 
+
 .drapeau{
     display: flex;
     width: 900px;
     height: 600px;
     margin: 10px;
-    border-radius:10px  ;
+    border: 1px solid #ccc  ;
+    position: relative;
     animation: flotter 2s ease-in-out infinite;
 }
+
+@keyframes flotter{
+    0%{transform: rotate(0deg) translatey(o);
+    }
+        50% {
+             transform: rotate(0.5deg) translatey(-5px);
+         }
+
+    100% {
+     transform: rotate(0deg) translatey(0);
+ }
+}
+
 
 .vert{
     background-color: #009500;
@@ -78,4 +93,19 @@ p {
 .jaune{
     background: #ffff00;
     flex: 1;
+}
+
+.blanc{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    flex: 1;
+}
+
+.point{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 0;
 }

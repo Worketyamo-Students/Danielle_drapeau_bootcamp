@@ -67,13 +67,13 @@ p {
     border: 1px solid #ccc;
     position: relative;
     animation: flotter 2s ease-in-out infinite;
-}
+    }
 
 @keyframes flotter{
     0%{transform: rotate(0deg) translatey(o);
     }
         50% {
-             transform: rotate(0.5deg) translatey(-5px);
+             transform: rotate(0.5deg) translatey(-10px);
          }
 
     100% {
@@ -85,33 +85,38 @@ p {
 .vert{
     background-color: #009500;
     flex: 1;
-
-}
+   }
 
 .rouge{
     background: #f00;
+    display: flex;
     flex: 1;
-}
+    flex-direction: column;
+   }
 
 .etoile{
-    font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 250px 0;
-}
+   }
+
+.etoile1 {
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+   }
 
 .jaune{
     background: #ffff00;
     flex: 1;
-}
+    }
 
 .blanc{
-    width: 100vw;
-    height: 100vh;
     background: #fff;
     flex: 1;
-}
+   }
 
 .point{
     font-size: 50px;
@@ -125,25 +130,30 @@ p {
     background: #00aeef;
     flex: 2;
     height: 50%;
-}
+   }
 
 .jaune1{
     background: #fad201;
     flex: 1;
     height: 25%;
-}
+    }
 
 .vert1{
     background: #20603d;
     flex: 1;
     height: 25%;
-}
+    }
 
 .soleil{
-    right: 10px;
+    right: 100px;
     width: 40px;
     height: 40px;
     position: absolute;   
-    background:#00aeef ;
     
 }
+
+.bleu1{
+    background: #002654;
+    flex: 1;
+    height: 25%;
+   }
